@@ -9,3 +9,9 @@
 // Sam Harris => S.H
 
 // patrick feeney => P.F
+
+const abbrevName = name =>
+    name
+        .split(' ')
+        .map(name => name[0].toUpperCase())
+        .join('.')
