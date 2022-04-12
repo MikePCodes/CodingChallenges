@@ -1,1 +1,1 @@
-# CodingChallenges
+# CodingChallenges from Codewars!
