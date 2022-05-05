@@ -4,3 +4,11 @@
 
 // Example
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+
+//Long Solution
+function smash(words) {
+    return words.join(" ")
+};
+
+//Short Solution
+const smash = words => words.join(" ")
