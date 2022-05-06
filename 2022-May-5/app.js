@@ -11,3 +11,15 @@
 
 // findNb(91716553919377) --> -1
 
+function findNb(m) {
+    let pyramid = 0
+    let n = 0
+
+    while (pyramid < m) {
+        n++
+        pyramid += n ** 3
+    }
+
+    return pyramid === m ? n : -1
+
+}
