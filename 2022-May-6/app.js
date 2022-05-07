@@ -11,3 +11,18 @@
 // 121 --> 144
 // 625 --> 676
 // 114 --> -1 since 114 is not a perfect square
+
+function findNextSquare(sq) {
+    //Helper Function
+    function isSquare(n) {
+        return Number.isInteger(Math.sqrt(n))
+    };
+
+    if (!isSquare(sq)) return -1;
+
+    let number = sq + 1;
+
+    while (!isSquare(number)) number++;
+
+    return number;
+}
