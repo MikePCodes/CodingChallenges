@@ -13,3 +13,12 @@
 // Example
 // input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+
+function openOrSenior(data) {
+    return data.map(member => {
+        const age = member[0];
+        const handicap = member[1];
+        return (age >= 55 && handicap > 7) ?
+            'Senior' : 'Open';
+    });
+}
