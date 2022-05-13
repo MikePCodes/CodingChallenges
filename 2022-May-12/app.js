@@ -11,3 +11,16 @@
 // [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
 // [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 
+function findOdd(A) {
+    for (let i = 0; i < A.length; i++) {
+        const element = A[i]
+
+        let counter = 0
+
+        for (const newElement of A) {
+            if (newElement === element) counter++
+        }
+
+        if (counter % 2 !== 0) return element
+    }
+}
