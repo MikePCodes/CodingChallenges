@@ -7,4 +7,8 @@
 
 // None of the arrays will be empty, so you don't have to worry about that!
 
-
+function removeEveryOther(arr) {
+    return arr.filter(function (elem, index) {
+        return index % 2 === 0;
+    });
+}
