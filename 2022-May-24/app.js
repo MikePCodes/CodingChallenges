@@ -9,3 +9,6 @@
 
 // Input: 123456789 Output: 987654321
 
+function descendingOrder(n) {
+    return Number(String(n).split("").sort((a, b) => b - a).join(""));
+}
