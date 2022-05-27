@@ -16,3 +16,8 @@
 // Input: [0, -1, -5]
 // Output: "even"
 // Have fun!
+
+function oddOrEven(array) {
+    const total = array.reduce((total, value) => total + value, 0)
+    return total % 2 === 0 ? 'even' : 'odd'
+}
