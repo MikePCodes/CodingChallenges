@@ -6,3 +6,7 @@
 // * "Hello World" -> "HHeelllloo  WWoorrlldd"
 // * "1234!_ "     -> "11223344!!__  "
 // Good Luck!
+
+function doubleChar(str) {
+    return str.split('').map(char => `${char}${char}`).join('')
+}
