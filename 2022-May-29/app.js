@@ -16,3 +16,13 @@
 
 // s="aaaxbbbbyyhwawiwjjjwwm"
 // printer_error(s) => "8/22"
+
+function printerError(s) {
+    const totalPrinted = s.length
+    const colors = 'abcdefghijklm'.split('')
+
+    const error = s.split('').reduce((a, b) => (!colors.includes(b) ? a + 1 : a), 0)
+
+    return `${error}/${totalPrinted}`
+
+}
