@@ -32,3 +32,6 @@
 // Explanation:
 // After placing signs and brackets, the Maximum value obtained from the expression is 9 * (1+1) = 18.
 
+function expressionMatter(a, b, c) {
+    return Math.max(a + b + c, a * b * c, (a + b) * c, a * (b + c))
+}
