@@ -13,3 +13,8 @@
 // For example:
 
 // 5, 10, 2  -->  17
+
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    const allGoals = laLigaGoals + copaDelReyGoals + championsLeagueGoals
+    return allGoals
+}
