@@ -12,3 +12,5 @@
 
 // (4, 1, 4)     ->  true
 // (15, -5, 3)   ->  true
+
+const isDivideBy = (number, ...otherNumbers) => otherNumbers.every(number_ => number % number_ === 0)
