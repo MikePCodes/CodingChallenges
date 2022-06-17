@@ -15,3 +15,10 @@
 // 0 <= h <= 23
 // 0 <= m <= 59
 // 0 <= s <= 59
+
+function past(h, m, s) {
+    const hourInMs = h * 3600000
+    const minutesInMs = m * 60000
+    const secondsInMS = s * 1000
+    return hourInMs + minutesInMs + secondsInMS
+}
