@@ -6,3 +6,7 @@
 // n = 0  ==> [1]        # [2^0]
 // n = 1  ==> [1, 2]     # [2^0, 2^1]
 // n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
+
+function powersOfTwo(n) {
+    return Array.from({ length: n + 1 }, (_, i) => 2 ** i)
+}
