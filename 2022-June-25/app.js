@@ -13,3 +13,8 @@
 // The correct answer would be 17.
 
 // Hint: Don't forget to check for bad values like null/undefined
+
+function countSheeps(arrayOfSheep) {
+    if (!arrayOfSheep) return 0
+    return arrayOfSheep.reduce((a, b) => (b ? ++a : a), 0)
+}
