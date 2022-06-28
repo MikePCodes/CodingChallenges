@@ -10,7 +10,7 @@
 
 // Example:
 //   declare_winner(Fighter("Lew", 10, 2), Fighter("Harry", 5, 4), "Lew") => "Lew"
-  
+
 //   Lew attacks Harry; Harry now has 3 health.
 //   Harry attacks Lew; Lew now has 6 health.
 //   Lew attacks Harry; Harry now has 1 health.
@@ -22,3 +22,9 @@
 //         this.damagePerAttack = damagePerAttack;
 //         this.toString = function() { return this.name; }
 // }
+
+function declareWinner(fighter1, fighter2, firstAttacker) {
+    const f1 = Math.ceil(fighter1.health / fighter2.damagePerAttack)
+    const f2 = Math.ceil(fighter2.health / fighter1.damagePerAttack)
+    return f1 < f2 ? fighter2.name : (f2 < f1 ? fighter1.name : firstAttacker);
+}
