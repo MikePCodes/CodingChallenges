@@ -15,3 +15,7 @@
 // Notes:
 // The first argument can be an empty string
 // The second string argument will always be of length 1
+
+function strCount(str, letter) {
+    return str.split(letter).length - 1
+}
