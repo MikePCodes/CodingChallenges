@@ -10,3 +10,12 @@
 // "foefet" is an anagram of "toffee"
 
 // "Buckethead" is an anagram of "DeathCubeK"
+
+const charCodeSum = string =>
+    string
+        .toLowerCase()
+        .split('')
+        .reduce((total, char) => total + char.charCodeAt(0), 0)
+
+const isAnagram = (test, original) =>
+    charCodeSum(test) === charCodeSum(original)
