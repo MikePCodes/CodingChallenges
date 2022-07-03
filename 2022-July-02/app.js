@@ -6,3 +6,9 @@
 
 // solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
 // solution(null); // should return []
+
+function solution(nums) {
+    if (!Array.isArray(nums)) return []
+
+    return nums.sort((a, b) => a - b)
+}
