@@ -14,3 +14,11 @@
 // there are 10 matches in the championship
 // 0 <= x <= 4
 // 0 <= y <= 4
+
+const points = games =>
+    games.reduce((total, result) => {
+        const [x, y] = result.split(':').map(Number)
+        if (x > y) return total + 3
+        if (x < y) return total
+        return total + 1
+    }, 0)
