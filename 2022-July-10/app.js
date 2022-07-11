@@ -19,3 +19,7 @@
 //  4  =>  true
 // 25  =>  true
 // 26  =>  false
+
+function isSquare(n) {
+    return Number.isInteger(Math.sqrt(n))
+}
