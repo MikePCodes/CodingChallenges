@@ -8,3 +8,5 @@
 // "1234"   -->  true
 // "12345"  -->  false
 // "a234"   -->  false
+
+const validatePIN = pin => /^(\d{4}|\d{6})$/g.test(pin)
