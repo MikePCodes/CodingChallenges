@@ -10,3 +10,5 @@
 
 // [] --> []
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+
+const number = (array) => array.map((char, index) => `${index + 1}: ${char}`)
