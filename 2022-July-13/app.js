@@ -11,3 +11,13 @@
 // (1, 1) --> 1 (1 since both are same)
 // (-1, 0) --> -1 (-1 + 0 = -1)
 // (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
+
+function getSum(...range) {
+    const rangeSort = range.sort((a, b) => a - b)
+    if (rangeSort[0] === rangeSort[1]) return rangeSort[0]
+
+    let result = 0
+    for (let i = rangeSort[0]; i <= rangeSort[1]; i++) result += i
+
+    return result
+}
