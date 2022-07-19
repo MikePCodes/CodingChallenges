@@ -13,3 +13,18 @@
 // 5, 2, "multiply" --> 10
 // 5, 2, "divide"   --> 2.5
 // Try to do it without using if statements!
+
+function arithmetic(a, b, operator) {
+    switch (operator) {
+        case 'add':
+            return a + b
+        case 'subtract':
+            return a - b
+        case 'multiply':
+            return a * b
+        case 'divide':
+            return a / b
+        default:
+            return 'Unknown operation'
+    }
+}
