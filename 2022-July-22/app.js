@@ -8,3 +8,5 @@
 
 // arr(5) // => [0,1,2,3,4]
 // Note: The parameter is optional. So you have to give it a default value.
+
+const arr = N => (N ? [...new Array(N).keys()] : [])
