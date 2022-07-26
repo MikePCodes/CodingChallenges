@@ -18,3 +18,20 @@
 // 1, 16, 81, 100, 121, 144, 169, 196, 361, 441.
 // So there are 11 digits 1 for the squares of numbers between 0 and 25.
 // Note that 121 has twice the digit 1.
+
+const nbDig = (n, d) => {
+    const squaredNumbers = []
+    for (let k = 0; k <= n; k++) squaredNumbers.push(String(k ** 2))
+
+    return squaredNumbers.reduce(
+        (totalDigits, number) =>
+            totalDigits +
+            number
+                .split('')
+                .reduce(
+                    (totalOnes, number_) => (Number(number_) === d ? totalOnes + 1 : totalOnes),
+                    0
+                ),
+        0
+    )
+}
