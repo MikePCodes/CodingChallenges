@@ -18,3 +18,8 @@
 
 // You can assume that all inputs are valid integers.
 
+function roundToNext5(n) {
+    for (let i = n; i <= Math.abs(n * 5); i++) {
+        if (i % 5 === 0) return i
+    }
+}
