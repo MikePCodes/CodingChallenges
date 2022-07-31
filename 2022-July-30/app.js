@@ -8,3 +8,9 @@
 // 99 --> 18
 // -32 --> 5
 // Let's assume that all numbers in the input will be integer values.
+
+const sumDigits = n =>
+    Math.abs(n)
+        .toString()
+        .split('')
+        .reduce((total, number) => total + Number(number), 0)
