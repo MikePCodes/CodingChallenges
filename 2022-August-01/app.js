@@ -10,3 +10,5 @@
 
 // friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 // Note: keep the original order of the names in the output.
+
+const friend = friends => friends.filter(friend => friend.length === 4)
